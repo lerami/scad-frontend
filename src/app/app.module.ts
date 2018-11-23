@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CliViewComponent } from './cli-view/cli-view.component';
 import { AdminViewComponent } from './admin-view/admin-view.component';
+import { TransactionsComponent } from './transactions/transactions.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { AdminViewComponent } from './admin-view/admin-view.component';
     AppComponent,
     CliViewComponent,
     AdminViewComponent,
+    TransactionsComponent,
   ],
   imports: [
     BrowserModule,
