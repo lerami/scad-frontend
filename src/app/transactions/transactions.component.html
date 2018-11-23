@@ -1,3 +1,7 @@
-<p>
-  transactions works!
-</p>
+<h2>Transactions</h2>
+
+<ul>
+  <li *ngFor="let transaction of transactions">
+    <span class="badge">{{transaction.id}}</span> {{transaction.user}}
+  </li>
+</ul>
