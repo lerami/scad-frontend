@@ -1,7 +1,7 @@
 <h2>Transactions</h2>
 
-<ul>
+<ul class="transactions">
   <li *ngFor="let transaction of transactions">
-    <span class="badge">{{transaction.id}}</span> {{transaction.user}}
+    <span class="badge">{{transaction.id}}</span>[{{transaction.action}}] {{transaction.user}} to file n°{{transaction.fileId}} on {{transaction.date}}
   </li>
 </ul>
