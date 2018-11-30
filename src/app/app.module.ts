@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { CliViewComponent } from './cli-view/cli-view.component';
 import { AdminViewComponent } from './admin-view/admin-view.component';
 import { CliLoginComponent } from './cli-login/cli-login.component';
+import { AppendInitVectComponent } from './cli-view/append-init-vect/append-init-vect.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { CliLoginComponent } from './cli-login/cli-login.component';
     AppComponent,
     CliViewComponent,
     AdminViewComponent,
-    CliLoginComponent
+    CliLoginComponent,
+    AppendInitVectComponent
    ],
   imports: [
     BrowserModule,
