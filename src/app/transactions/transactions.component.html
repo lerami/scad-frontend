@@ -5,3 +5,23 @@
     <span class="badge">{{transaction.id}}</span>[{{transaction.action}}] {{transaction.user}} to file n°{{transaction.fileId}} on {{transaction.date}}
   </li>
 </ul>
+
+<div>
+  <label>Add Transaction:
+    <input #transactionadd />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(transactionadd.value); transactionadd.value=''">
+    add
+  </button>
+</div>
+
+<div>
+  <label>Delete Transaction:
+    <input #transactiondelete />
+  </label>
+  <!-- (click) passes input value to Delete() and then clears the input -->
+  <button (click)="delete(transactiondelete.value); transactiondelete.value=''">
+    delete
+  </button>
+</div>
