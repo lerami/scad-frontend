@@ -25,6 +25,7 @@ l
     if (!user) { return; }
     this.transactionsService.addTransaction({ user } as Transaction)
       .subscribe(transaction => {
+        console.log("coucou gatchu gatchu");
         this.transactions.push(transaction);
       });
   }
